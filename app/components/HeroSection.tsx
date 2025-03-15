@@ -23,17 +23,19 @@ export default function HeroSection() {
 						<div className="w-3 h-3 rounded-full bg-green-500" />
 					</div>
 					<div className="font-mono">
-						<p className="text-green-500">$ whoami</p>
-						<h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">Alex Chen</h1>
-						<p className="text-gray-400 mb-2">Senior Backend Engineer</p>
+						<p className="text-green-500">$ who am i</p>
+						<h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">Nivit Singh</h1>
+						<p className="text-gray-400 mb-2">Software Developer</p>
 						<p className="text-green-500">$ skills</p>
 						<div className="flex flex-wrap gap-2 mt-2">
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Node.js</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Java</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Go</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">AWS</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Docker</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Kubernetes</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">JavaScript</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">HTML</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">CSS</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">C++</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">C</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">SQl</span>
 						</div>
 					</div>
 				</motion.div>

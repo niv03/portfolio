@@ -89,7 +89,7 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Code Quality</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Led adoption of TypeScript across backend</li>
+									<li>• Led adoption of TypeScript across software</li>
 									<li>• Established coding standards</li>
 									<li>• Reduced technical debt by 40%</li>
 								</ul>

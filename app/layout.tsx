@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '[Your Name] - Backend Developer',
+	title: 'Nivit Singh - Software Developer',
 	description:
-		'Welcome to my portfolio! I am a passionate backend developer specializing in building scalable server architectures, robust APIs, and high-performance distributed systems. With expertise in cloud infrastructure and database optimization, I create efficient and reliable backend solutions.',
+		'Welcome to my portfolio! I am a passionate Software Developer specializing in building scalable server architectures, robust APIs, and high-performance distributed systems. With expertise in cloud infrastructure and database optimization, I create efficient and reliable software solutions.',
 	keywords: [
-		'Backend Developer',
+		'Software Developer',
 		'Software Engineer',
 		'System Architecture',
 		'API Development',
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 		'Cloud Computing',
 		'Microservices',
 		'DevOps',
-		'[Your Name]',
+		'Nivit Singh',
 		'Node.js',
 		'Python',
 		'Java',
 		'Distributed Systems',
 		'System Design',
-		'Backend Architecture',
+		'software Architecture',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Nivit Singh' }],
+	creator: 'Nivit Singh',
 	openGraph: {
-		title: '[Your Name] - Backend Developer Portfolio',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
+		title: 'Nivit Singh - Software Developer Portfolio',
+		description: 'Passionate Software Developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
 		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		siteName: 'Nivit Singh - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Backend Developer Portfolio',
+				alt: 'Nivit Singh - Software Developer Portfolio',
 			},
 		],
 		locale: 'en_US',
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - Backend Developer',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
+		title: 'Nivit Singh - Software Developer',
+		description: 'Passionate Software Developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
 		creator: '@yourusername',
 		images: ['/og-image.jpg'],
 	},

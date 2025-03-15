@@ -7,13 +7,13 @@ export default function SystemArchitecture() {
 		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-center">
-					System Architecture & Projects
+					Experience
 				</motion.h2>
 
 				<div className="grid grid-cols-1 gap-8">
 					{[
 						{
-							title: 'Scalable Microservices Architecture',
+							title: 'Software Developer Intern',
 							description: 'Designed and implemented a microservices architecture handling 1M+ daily requests with 99.99% uptime',
 							details: [
 								'Containerized microservices with Docker and Kubernetes',
@@ -24,7 +24,7 @@ export default function SystemArchitecture() {
 							tech: ['Kubernetes', 'Docker', 'Istio', 'Kafka', 'MongoDB', 'Redis'],
 						},
 						{
-							title: 'Real-time Data Processing Pipeline',
+							title: 'Software Developer Intern',
 							description: 'Built a robust data processing pipeline handling 5TB+ daily data with sub-second latency',
 							details: [
 								'Implemented stream processing with Apache Flink',

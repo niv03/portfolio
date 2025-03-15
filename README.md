@@ -1,6 +1,6 @@
-# Backend Developer Portfolio Template
+# Software Developer Portfolio Template
 
-[Demo](https://www.devportfoliotemplates.com/portfolio-templates/backend-developer)
+[Demo](https://www.devportfoliotemplates.com/portfolio-templates/software-developer)
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ If you want to clone only this specific template:
 git clone --no-checkout https://github.com/devportfoliotemplates/devportfoliotemplates.git
 cd devportfoliotemplates
 git sparse-checkout init --cone
-git sparse-checkout set backend-developer-portfolio-template
+git sparse-checkout set software-developer-portfolio-template
 git checkout
 ```
 
@@ -23,7 +23,7 @@ git checkout
 You can download this template as a ZIP file:
 
 1. Visit [download-directory.github.io](https://download-directory.github.io/)
-2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/backend-developer-portfolio-template`
+2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/software-developer-portfolio-template`
 3. Download and extract the ZIP file
 
 ### Running the Template
