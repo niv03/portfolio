@@ -1,73 +1,3 @@
-// 'use client';
-
-// import { motion } from 'framer-motion';
-
-// export default function SystemArchitecture() {
-// 	return (
-// 		<section className="py-20 px-4">
-// 			<div className="max-w-6xl mx-auto">
-// 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-center">
-// 					Experience
-// 				</motion.h2>
-
-// 				<div className="grid grid-cols-1 gap-8">
-// 					{[
-// 						{
-// 							title: 'Software Developer Intern',
-// 							description: 'Designed and implemented a microservices architecture handling 1M+ daily requests with 99.99% uptime',
-// 							details: [
-// 								'Containerized microservices with Docker and Kubernetes',
-// 								'Implemented service mesh with Istio',
-// 								'Designed event-driven architecture using Apache Kafka',
-// 								'Achieved 40% reduction in response times',
-// 							],
-// 							tech: ['Kubernetes', 'Docker', 'Istio', 'Kafka', 'MongoDB', 'Redis'],
-// 						},
-// 						{
-// 							title: 'Software Developer Intern',
-// 							description: 'Built a robust data processing pipeline handling 5TB+ daily data with sub-second latency',
-// 							details: [
-// 								'Implemented stream processing with Apache Flink',
-// 								'Designed fault-tolerant architecture with automatic failover',
-// 								'Optimized data throughput by 60%',
-// 								'Implemented comprehensive monitoring with Prometheus & Grafana',
-// 							],
-// 							tech: ['Apache Flink', 'AWS Kinesis', 'Prometheus', 'Grafana', 'Python', 'PostgreSQL'],
-// 						},
-// 					].map((project, index) => (
-// 						<motion.div
-// 							key={index}
-// 							initial={{ opacity: 0, y: 20 }}
-// 							whileInView={{ opacity: 1, y: 0 }}
-// 							viewport={{ once: true }}
-// 							transition={{ delay: index * 0.2 }}
-// 							className="bg-gray-900/50 rounded-xl p-6 backdrop-blur-sm border border-gray-800"
-// 						>
-// 							<h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-// 							<p className="text-gray-400 mb-6">{project.description}</p>
-// 							<div className="mb-6">
-// 								<h4 className="text-lg font-semibold mb-2">Key Achievements:</h4>
-// 								<ul className="list-disc list-inside space-y-2 text-gray-300">
-// 									{project.details.map((detail, i) => (
-// 										<li key={i}>{detail}</li>
-// 									))}
-// 								</ul>
-// 							</div>
-// 							<div className="flex flex-wrap gap-2">
-// 								{project.tech.map((tech, i) => (
-// 									<span key={i} className="text-sm px-3 py-1 bg-blue-500/10 rounded-full border border-blue-500/20">
-// 										{tech}
-// 									</span>
-// 								))}
-// 							</div>
-// 						</motion.div>
-// 					))}
-// 				</div>
-// 			</div>
-// 		</section>
-// 	);
-// }
-
 'use client';
 
 import { motion } from 'framer-motion';
@@ -93,46 +23,71 @@ export default function ExperienceSection() {
               <p className="text-green-500 mb-2">$ experience --list</p>
               <h2 className="text-3xl font-bold mb-8 text-gray-200">Work Experience</h2>
 
-              <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-                {/* University of Alberta Experience */}
-                <div className="p-6 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20">
-                  <h3 className="font-semibold text-xl md:text-2xl">Undergraduate Teaching Assistant</h3>
+              {/* Dynamic Experience Cards */}
+              {[
+                {
+                  title: 'Undergraduate Teaching Assistant',
+                  company: 'University of Alberta',
+                  location: 'Edmonton, AB 🇨🇦',
+                  duration: 'Sep 2024 – Dec 2024',
+                  impact: [
+                    'Improved assignment grading consistency with clear evaluation rubrics.',
+                    'Enhanced student understanding with customized guidance on CMPUT 300 concepts.'
+                  ],
+                  tech: ['Evaluation Criteria', 'CMPUT 300', 'Student Support']
+                },
+                {
+                  title: 'Software Developer Intern',
+                  company: 'Colaberry',
+                  location: 'Boston, US 🇺🇸',
+                  duration: 'May 2024 – Aug 2024',
+                  impact: [
+                    'Increased data processing speed by 60% using a Python + OpenAI pipeline.',
+                    'Cut manual data transformation by 70% with SQL automation.',
+                    'Deployed dynamic mapping tool on AWS Amplify to enhance user interaction.'
+                  ],
+                  tech: ['Python', 'OpenAI', 'Astro', 'AWS Amplify', 'SQL']
+                },
+                {
+                  title: 'Software Developer Intern',
+                  company: 'DigiHunk Technologies',
+                  location: 'Delhi, India 🇮🇳',
+                  duration: 'May 2023 – Aug 2023',
+                  impact: [
+                    'Enhanced page load speed by 30% with optimized React components.',
+                    'Built a real-time chat system in Flutter with Firebase integration.',
+                    'Reduced message delivery time by 60% via efficient REST API design.'
+                  ],
+                  tech: ['React', 'Flutter', 'Firebase', 'Django', 'PostgreSQL']
+                }
+              ].map((exp, index) => (
+                <div
+                  key={index}
+                  className="p-6 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 mb-6"
+                >
+                  <h3 className="font-semibold text-xl md:text-2xl">{exp.title}</h3>
                   <p className="text-sm text-gray-400 mb-2 md:text-base">
-                    <span className="text-green-500 font-semibold">University of Alberta</span>  | <span className="text-green-500">Edmonton, AB</span> 🇨🇦| Sep 2024 – Dec 2024
+                    <span className="text-green-500 font-semibold">{exp.company}</span> | {exp.location} | {exp.duration}
                   </p>
+                  <p className="text-green-500">$ impact</p>
                   <ul className="list-disc pl-5 text-gray-300 md:text-lg">
-                    <li>Guided students in <span className="text-green-500">CMPUT 300</span> concepts.</li>
-                    <li>Assessed assignments using <span className="text-green-500">evaluation criteria</span> for consistent grading.</li>
+                    {exp.impact.map((detail, i) => (
+                      <li key={i}>{detail}</li>
+                    ))}
                   </ul>
+                  <p className="text-green-500 mt-4">$ tech-stack</p>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {exp.tech.map((tech, i) => (
+                      <span key={i} className="text-sm px-3 py-1 bg-blue-500/10 rounded-full border border-blue-500/20">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+              ))}
 
-                {/* Colaberry Experience */}
-                <div className="p-6 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20">
-                  <h3 className="font-semibold text-xl md:text-2xl">Software Developer Intern</h3>
-                  <p className="text-sm text-gray-400 mb-2 md:text-base">
-                    <span className="text-green-500 font-semibold">Colaberry</span>  | <span className="text-green-500">Boston, US</span> 🇺🇸| May 2024 – Aug 2024
-                  </p>
-                  <ul className="list-disc pl-5 text-gray-300 md:text-lg">
-                    <li>Built a <span className="text-green-500">CSV analysis pipeline</span> with <span className="text-green-500">Python</span> and <span className="text-green-500">OpenAI</span>, increasing processing speed by 60%.</li>
-                    <li>Developed a <span className="text-green-500">capability mapping tool</span> with <span className="text-green-500">Astro</span>, hosted on <span className="text-green-500">AWS Amplify</span>.</li>
-                    <li>Created a <span className="text-green-500">SQL-based data transformation system</span>, cutting manual processing by 70%.</li>
-                  </ul>
-                </div>
-
-                {/* DigiHunk Technologies Experience */}
-                <div className="p-6 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20">
-                  <h3 className="font-semibold text-xl md:text-2xl">Software Developer Intern</h3>
-                  <p className="text-sm text-gray-400 mb-2 md:text-base">
-                    <span className="text-green-500 font-semibold">DigiHunk Technologies</span> | <span className="text-green-500">Delhi, India</span> 🇮🇳 | May 2023 – Aug 2023
-                  </p>
-                  <ul className="list-disc pl-5 text-gray-300 md:text-lg">
-                    <li>Developed a <span className="text-green-500">React e-commerce app</span> with <span className="text-green-500">Node.js</span> and <span className="text-green-500">MongoDB</span>.</li>
-                    <li>Built a <span className="text-green-500">real-time messaging system</span> in <span className="text-green-500">Flutter</span> with <span className="text-green-500">Firebase</span>.</li>
-                    <li>Created <span className="text-green-500">RESTful APIs</span> using <span className="text-green-500">Django</span> and <span className="text-green-500">PostgreSQL</span>.</li>
-                    <li>Enhanced <span className="text-green-500">UI/UX</span> using <span className="text-green-500">Figma</span>.</li>
-                  </ul>
-                </div>
-              </div>
+              <p className="text-green-500 mt-8">$ uptime</p>
+              <p className="text-gray-300">Active Developer Since: 2021</p>
             </div>
           </div>
         </motion.div>
