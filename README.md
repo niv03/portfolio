@@ -61,7 +61,7 @@ pnpm dev
    - Site title
    - Description
    - Open Graph metadata
-   - Favicon c
+   - Favicon cc
 
 2. Modify content in `app/page.tsx`:
 
